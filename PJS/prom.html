@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <!-- <div class="prompt">
+        <label for="">Username</label>
+        <input type="text" id="row1" >
+    </div>
+    <div class="prompt">
+        <label for="">Email</label>
+        <input type="text" id="row" >
+    </div>
+    <div class="prompt">
+        <label for="">Password</label>
+        <input type="text" id="row3" >
+    </div>
+    <div class="prompt">
+        <label for="">Phone Number</label>
+        <input type="text" id="row4" >
+    </div>
+    <button type="submit" class="btn">Submit</button>
+</form> -->
+<script>
+    function submit() {
+        var name = document.getElementById("row1").value.trim();
+        var email = document.getElementById("row2").value.trim();
+        var pass = document.getElementById("row3").value.trim();
+        var number = document.getElementById("row4").value.trim();
+
+        if (name === '' || email === '') {
+            alert("Fill The Fields")
+        }
+        else{
+            alert("Form Submitted")
+        }
+    };
+    var name = prompt("Enter a Name");
+
+    var regex = /^[a-zA-Z]{4,14}$/;
+
+    if (name.match(regex) ){   
+        document.write("Your Name is Valid!");
+    }
+    else {
+        document.write("Invaid Name!");
+    }
+   
+
+</script>
+    
+</body>
+</html>

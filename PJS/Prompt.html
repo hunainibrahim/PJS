@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter a Name");
+
+var regex = /^[a-zA-Z]{4,14}$/;
+
+if (name.match(regex) ){   
+    document.write("Your Name is Valid!");
+}
+else {
+    document.write("Invaid Name!");
+}
+
+
+var mail = prompt("Enter a Email");
+
+var regex = /^[A-Za-z/d._-]+@[a-zA-Z/d.-]+\.[a-zA-Z]{2,3}$/;
+
+if (mail.match(regex) ){   
+    document.write("Your Email is Valid!");
+}
+else {
+    document.write("Invaid Email!");
+}
+
+
+var pass = prompt("Enter a Password");
+
+var regex = /^[A-Za-z/d$#*+]{8,12}$/;
+
+if (pass.match(regex) ){   
+    document.write("Your Password is Valid!");
+}
+else {
+    document.write("Password Invalid!");
+}
+
+
+var phone = prompt("Enter a Phone Number");
+
+var regex = /^(\+92|0)[0-9]{10}$/;;
+
+if (phone.match(regex) ){   
+    document.write("Your Phone Number is Valid!");
+}
+else {
+    document.write("Invaid Phone Number!");
+}
+    </script>
+</body>
+</html>

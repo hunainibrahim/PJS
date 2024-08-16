@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var phone = prompt("Enter a Phone Number");
+
+var regex = /^(\+92|0)[0-9]{10}$/;;
+
+if (phone.match(regex) ){   
+    document.write("Your Phone Number is Valid!");
+}
+else {
+    document.write("Invaid Phone Number!");
+}
+    </script>
+</body>
+</html>

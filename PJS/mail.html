@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        var mail = prompt("Enter a Email");
+
+var regex = /^[A-Za-z/d._-]+@[a-zA-Z/d.-]+\.[a-zA-Z]{2,3}$/;
+
+if (mail.match(regex) ){   
+    document.write("Your Email is Valid!");
+}
+else {
+    document.write("Invaid Email!");
+}
+
+</script>
+</body>
+</html>
